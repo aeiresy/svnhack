@@ -1,0 +1,5 @@
+This project provides the direct read/write on the repository, for system administration purpose.
+
+You know the SVN is different to CVS, which manage the revisions file by file, but SVN treats the whole repository as a single file. When you commit something, the revision of the whole repository increases. Thus, you can't directly modify the history of some files (except the commit message).
+
+For example, when you committed an unwanted large file, and 10 years later, after you have made a lot of changes to your versioned files, one day you found that the repository is too large but you can't delete the large file, because in SVN, the history is read-only. Though you can delete the large file and commit to the next revision, but you can't delete it from the repository. (Well, this is the motivation of this project. )
